@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <title>sample web</title>
+</head>
+
+<body id="page-top">
+
+  <!-- 背景 -->
+  <div class="background"><canvas id="background"></canvas></div>
+
+  <!-- ナビゲーションメニュー -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 nav-style">
+      <div class="container">
+        <div class="nav-gear">
+          <div class="nav-gear01" id="nav-gear01"></div>
+          <div class="nav-gear02" id="nav-gear02"></div>
+          <div class="nav-gear03" id="nav-gear03"></div>
+          <a class="navbar-brand nav-gear-text" href="#page-top">sample web</a>
+        </div>
+        <button type="button" id="navbar-toggler" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#notices" role="button">Notices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#wave_modal" role="button">Wave</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- トップ -->
+  <section id="top" class="top-full-height top-center">
+    <div class="container">
+      <div class="row justify-content-center text-center border bg-white p-4">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-end">
+          <h2 class="text-uppercase font-weight-bold">テスト用</h2>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-baseline">
+          <p class="font-weight-light mb-5">実験用のWebページです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-full-height about-center">
+    <div class="container">
+      <div class="row border bg-white p-4">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center">
+          <h2 class="mb-4">About</h2>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <table class="nospace mx-auto">
+            <tr>
+              <td class="nonewline nospace topstring small"></td>
+              <td class="nonewline nospace small">　</td>
+              <td class="nospace font-weight-light small">実験用のWebページ</td>
+            </tr>
+            <tr>
+              <td class="nonewline nospace topstring small"></td>
+              <td class="nonewline nospace small">　</td>
+              <td class="nospace small"></td>
+            </tr>
+            <tr>
+              <td class="nonewline nospace topstring small"></td>
+              <td class="nonewline nospace small">　</td>
+              <td class="nospace small"></td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 mx-auto"></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 clearfix">
+          <img class="face mx-auto d-block float-sm-none float-md-right float-lg-right float-xl-right" src="img/icon.png" alt="画像">
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mx-auto">
+          <table class="nospace mx-auto">
+            <tr>
+              <td class="nonewline nospace topstring small text-left font-weight-light"> ：</td>
+              <td class="nonewline nospace topstring small text-left font-weight-light"></td>
+            </tr>
+            <tr>
+              <td class="nonewline nospace topstring small text-left font-weight-light"> ：</td>
+              <td class="nonewline nospace topstring small text-left font-weight-light"></td>
+            </tr>
+            <tr>
+              <td class="nonewline nospace topstring small text-left font-weight-light"> ：</td>
+              <td class="nonewline nospace topstring small text-left font-weight-light"></td>
+            </tr>
+            <tr>
+              <td class="nonewline nospace topstring small text-left font-weight-light"> ：</td>
+              <td class="nonewline nospace topstring small text-left font-weight-light"></td>
+            </tr>
+            <tr>
+              <td class="nonewline nospace topstring small text-left font-weight-light"> ：</td>
+              <td class="nonewline nospace topstring small text-left font-weight-light"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 mx-auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-padding contact-center">
+    <div class="container">
+      <div class="row justify-content-center border bg-white p-4">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center">
+          <h2 class="mb-4">Contact</h2>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+          <form id="contact_form" method="POST" action="">
+
+            <div class="form-group">
+              <label for="input_name">氏名</label>
+              <input type="text" class="form-control" id="input_name" name="input_name" placeholder="山田　太郎" value="">
+                <span class="help-block">
+                  <strong></strong>
+                </span>
+            </div>
+
+            <div class="form-group">
+              <label for="input_phonetic">フリガナ</label>
+              <input type="text" class="form-control" id="input_phonetic" name="input_phonetic" placeholder="ヤマダ　タロウ" value="">
+                <span class="help-block">
+                  <strong></strong>
+                </span>
+            </div>
+
+            <div class="form-group">
+              <label for="input_email">Eメールアドレス</label>
+              <input type="email" class="form-control" id="input_email" name="input_email" placeholder="name@example.com" value="">
+                <span class="help-block">
+                  <strong></strong>
+                </span>
+            </div>
+
+            <div class="form-group">
+              <label for="input_tel">電話番号</label>
+              <input type="tel" class="form-control" id="input_tel" name="input_tel" placeholder="1234-56-7891" value="">
+                <span class="help-block">
+                  <strong></strong>
+                </span>
+            </div>
+
+            <div class="form-group">
+              <label for="input_subject">件名</label>
+              <input type="text" class="form-control" id="input_subject" name="input_subject" placeholder="○○について" value="">
+                <span class="help-block">
+                  <strong></strong>
+                </span>
+            </div>
+
+            <div class="form-group">
+              <label for="input_message">お問合せ内容</label>
+              <textarea class="form-control" id="input_message" name="input_message" rows="15" placeholder="お問合せ内容をご記載下さい。" value=""></textarea>
+                <span class="help-block">
+                  <strong></strong>
+                </span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">送信</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notices Section modal-dialog-->
+  <div class="modal fade" id="notices" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Notices</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h3>Notices for files:</h3>
+            <ul>
+              <li>jquery-3.4.1.min.js</li>
+            </ul>
+            <pre id="jquery-3.4.1.min.js.id" class="notices-pre bg-light p-4"></pre>
+
+            <h3>Notices for files:</h3>
+            <ul>
+              <li>bootstrap.bundle.min.js</li>
+              <li>bootstrap.min.css</li>
+            </ul>
+            <pre id="bootstrap.bundle.min.js.id" class="notices-pre bg-light p-4"></pre>
+
+            <h3>Notices for files:</h3>
+            <ul>
+              <li>three.min.js</li>
+              <li>OrbitControls.js</li>
+              <li>GLTFLoader.js</li>
+              <li>DRACOLoader.js</li>
+            </ul>
+            <pre id="three.min.js.id" class="notices-pre bg-light p-4"></pre>
+
+            <h3>Notices for files:</h3>
+            <ul>
+              <li>draco_decoder.js</li>
+            </ul>
+            <pre id="draco_decoder.js.id" class="notices-pre bg-light p-4"></pre>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave Section modal-dialog-->
+  <div class="modal fade" id="wave_modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Wave</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <canvas id="wave_sample" width="800" height="600"></canvas>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="py-4 fixed-bottom footer-style">
+    <div class="container">
+      <div class="text-center">&copy;2020 </div>
+    </div>
+  </footer>
+
+  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="js/lib/popper.min.js"></script>
+  <script src="js/lib/three.min.js"></script>
+  <script src="js/lib/OrbitControls.js"></script>
+  <script src="js/lib/draco_decoder.js"></script>
+  <script src="js/lib/GLTFLoader.js"></script>
+  <script src="js/lib/DRACOLoader.js"></script>
+  <script src="js/3dgear.js"></script>
+  <script src="js/gear.js"></script>
+  <script src="js/wave.js"></script>
+  <script src="js/navmenu.js"></script>
+  <script src="js/file.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>

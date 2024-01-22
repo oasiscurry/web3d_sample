@@ -1,0 +1,183 @@
+/**
+ * *****************************************************************************
+ * ページ共通css
+ *
+ * @package   assets\css
+ * @author    shingo.yoshioka / https://www.sighon-system.jp
+ * @copyright 2020 shingo.yoshioka
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ * *****************************************************************************
+ */
+
+/* *****************************************************************************
+ * 目次
+ *   01. 背景
+ *   02. ナビゲーションメニュー
+ *   03. トップ
+ *   04. About
+ *   05. Works
+ *   06. Contact
+ *   07. Notices
+ *   08. フッター
+ *   09. reCAPTCHA v3
+ * ****************************************************************************/
+
+/* *****************************************************************************
+ * 01. 背景
+ * ****************************************************************************/
+.background {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: -1000;
+}
+
+/* *****************************************************************************
+ * 02. ナビゲーションメニュー
+ * ****************************************************************************/
+.nav-style {
+  background-color: rgba(80, 80, 80, 0.5);
+}
+
+.nav-gear {
+  position: relative;
+}
+
+.nav-gear01 {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/nav-gear01.svg");
+  background-size: 100%;
+}
+
+.nav-gear02 {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/nav-gear02.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 19px;
+  left: 34px;
+}
+
+.nav-gear03 {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/nav-gear03.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 15px;
+  left: 61px;
+}
+
+.nav-gear-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* *****************************************************************************
+ * 03. トップ
+ * ****************************************************************************/
+.top-full-height {
+  height: 100vh;
+}
+
+.top-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *****************************************************************************
+ * 04. About
+ * ****************************************************************************/
+.about-full-height {
+  height: 100vh;
+}
+
+.about-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table.nospace {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+table.space {
+  border-spacing: 2px;
+}
+
+td.nonewline {
+  white-space: nowrap;
+}
+
+td.nospace {
+  margin: 0px;
+  padding: 0px;
+}
+
+td.topstring {
+  vertical-align: top;
+}
+
+img.face {
+  border-radius: 10px 10px 10px 10px;
+  width: 50%;
+  height: auto;
+}
+
+/* *****************************************************************************
+ * 05. Works
+ * ****************************************************************************/
+.works-padding {
+  padding-top: 130px;
+}
+
+/* *****************************************************************************
+ * 06. Contact
+ * ****************************************************************************/
+.contact-full-height {
+  height: 100vh;
+}
+
+.contact-padding {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.contact-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *****************************************************************************
+ * 07. Notices
+ * ****************************************************************************/
+.notices-pre {
+  white-space: pre-wrap;
+}
+
+.notices-padding {
+  padding-top: 130px;
+}
+
+/* *****************************************************************************
+ * 08. フッター
+ * ****************************************************************************/
+.footer-style {
+  background-color: rgba(160, 160, 160, 1);
+}
+
+/* *****************************************************************************
+ * 09. reCAPTCHA v3
+ * ****************************************************************************/
+.grecaptcha-badge{
+  margin-bottom: 60px;
+}
